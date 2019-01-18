@@ -1,5 +1,3 @@
-import { relative } from "path";
-
 // Global
 
 const HOME = "/";

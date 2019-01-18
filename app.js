@@ -8,6 +8,7 @@ import routes from "./routes";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
+
 const app = express();
 
 app.use(helmet()); // Security
@@ -17,7 +18,6 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev")); // Logging
-
 app.use(localsMiddleware);
 
 app.use(routes.home, globalRouter);
