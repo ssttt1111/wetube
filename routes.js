@@ -19,7 +19,7 @@ const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
-const DELETE_VIDEO = "/:Id/delete";
+const DELETE_VIDEO = "/:id/delete";
 
 const routes = {
   home: HOME,
